@@ -2,7 +2,8 @@
   "manifest_version": "0.4",
   "name": "vturb-analytics",
   "display_name": "VTurb Analytics",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "icon": "icon.png",
   "description": "Analytics da VTurb dentro do Claude — métricas, conversões, sessões e dashboards visuais.",
   "long_description": "Acessa todos os 28 endpoints da Public Analytics API da VTurb (https://analytics.vturb.net): views, plays, finishes, conversões com receita em USD/BRL/EUR, engagement por segundo, traffic origin, AB tests (comparison groups), live users, quota usage. Inclui o dashboard visual `player_overview` que mostra KPIs + gráfico diário + plataformas ativas em um painel só. Roda 100% local — seu token nunca sai da sua máquina.",
   "author": {
