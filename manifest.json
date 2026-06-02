@@ -2,7 +2,7 @@
   "manifest_version": "0.4",
   "name": "vturb-analytics",
   "display_name": "VTurb Analytics",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "icon": "icon.png",
   "description": "Analytics da VTurb dentro do Claude — métricas, conversões, sessões e dashboards visuais.",
   "long_description": "Acessa todos os 28 endpoints da Public Analytics API da VTurb (https://analytics.vturb.net): views, plays, finishes, conversões com receita em USD/BRL/EUR, engagement por segundo, traffic origin, AB tests (comparison groups), live users, quota usage. Inclui o dashboard visual `player_overview` que mostra KPIs + gráfico diário + plataformas ativas em um painel só. Roda 100% local — seu token nunca sai da sua máquina.",
@@ -40,19 +40,23 @@
   },
   "tools": [
     {
+      "name": "vturb_help",
+      "description": "VTurb entry point — returns the catalog of 28 underlying tools and the discovery flow. Call this first whenever the user mentions VTurb."
+    },
+    {
       "name": "search",
       "description": "Discover one of the 28 underlying VTurb tools by keyword (Code Mode)."
     },
     {
       "name": "get_schema",
-      "description": "Inspect a tool's signature with enum/format hints (Code Mode)."
+      "description": "Inspect a VTurb tool's signature with enum/format hints (Code Mode)."
     },
     {
-      "name": "execute",
+      "name": "vturb_execute",
       "description": "Run one or more VTurb API tools in a sandboxed Python block (Code Mode)."
     },
     {
-      "name": "player_overview",
+      "name": "vturb_player_overview",
       "description": "Visual dashboard: KPIs + daily conversions chart + active platforms + quota usage for a player."
     }
   ],
