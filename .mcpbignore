@@ -1,0 +1,38 @@
+# Build artifacts
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+
+# Lockfiles (uv generates fresh on first run)
+uv.lock
+
+# Test/lint cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Git & GitHub
+.git/
+.github/
+.gitignore
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Project docs not needed inside the bundle
+CLAUDE.md
+scripts/
+
+# Don't bundle the bundle itself
+*.mcpb
